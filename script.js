@@ -95,7 +95,7 @@
   });
 
   // share button: copies score or opens tweet
-  qs('#shareBtn').addEventListener('click', ()=>{
+  /* qs('#shareBtn').addEventListener('click', ()=>{
     const score = balance;
     const text = `I scored ${score} PENGU on the RugPengu clicker! Join the nest: https://rugpengu.onepage.me #PenguArmy`;
     if(navigator.share){
@@ -105,7 +105,7 @@
         alert('Score copied to clipboard — paste to share!');
       });
     }
-  });
+  }); */
 
   // main page button
   qs('#mainPageBtn').addEventListener('click', ()=>{
