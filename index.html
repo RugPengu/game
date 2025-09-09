@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RugPengu Clicker — Play & Share</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game" class="container" role="main">
+    <header class="header">
+      <img src="pengu.svg" alt="RugPengu logo" id="logo" onerror="this.style.display='none'">
+      <div>
+        <h1>RugPengu Clicker <span class="emoji">🐧</span></h1>
+        <p class="lead">Click the penguin to collect <strong>fake</strong> PENGU. Scores save in your browser. Share your score to get OG perks!</p>
+      </div>
+    </header>
+
+    <section class="panel info">
+      <div class="wallet" aria-live="polite">
+        <div class="wallet-line"><strong>Wallet:</strong> <span id="walletAddr"></span></div>
+        <div class="wallet-line"><strong>PENGU:</strong> <span id="balance">0</span></div>
+      </div>
+
+      <div class="progress-wrap" aria-hidden="false">
+        <div class="progress-bar" id="progressBar" title="Progress to bonus"></div>
+      </div>
+
+      <div class="pengu-area">
+        <button id="penguBtn" class="pengu" aria-label="Click penguin" title="Click me!">🐧</button>
+      </div>
+
+      <div id="bonusMsg" class="bonus" aria-live="polite" role="status"></div>
+
+      <div class="controls">
+        <button id="resetBtn" class="btn ghost">Reset Score</button>
+        <button id="shareBtn" class="btn">Share Score</button>
+        <button id="mainPageBtn" class="btn primary">Go to Main Page</button>
+      </div>
+    </section>
+
+    <section class="panel activity">
+      <h3>Activity</h3>
+      <ul id="log" class="log" aria-live="polite"></ul>
+    </section>
+
+    <footer class="footer">
+      <p class="small">This is a fake in-browser toy — no real crypto moves. Play for fun. <strong>RugPengu is a meme token. High risk.</strong></p>
+    </footer>
+
+    <div id="confetti" class="confetti" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
